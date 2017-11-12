@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BHARAT NISCHAL</title>
+    <style media="screen">
+    body{
+      padding: 0;
+      margin: 0;
+      background-color:#262626;
+    }
+      #main{
+        border-top: 15px solid #262626;
+        margin: auto;
+      }
+      #header{
+        z-index: 2;
+        width: 95%;
+        margin: auto;
+        background-image: url("e.jpg");
+        padding: 5px;
+      }
+      #header p{
+        position: relative;
+        left: 560px;
+        top: 20px;
+        font-size: 70px;
+        color:white;
+        font-family: cursive;
+      }
+      h4{
+        color: white;
+        position: relative;
+        left: 630px;
+      }
+      h3{
+        color: white;
+        position: relative;
+        left: 40px;
+      }
+    .inline{
+      display: inline;
+    }
+  #list li{
+      margin: 0px;
+      display: inline;
+      border: 2px solid white;
+      padding: 5px;
+      }
+#list a{
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+    }
+      /*animation on photos */
+      .personal{
+              position: absolute;
+              top:70px; ;
+              left:120px; ;
+            }
+            .box{
+              position: relative;
+              width: 300px;
+               height: 435px;
+              padding: 20px;
+             }
+            .image{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background: #262626;
+              font-size: 20px;
+              color: white;
+              font-family: cursive;
+              z-index: 2;
+              transform-origin: left;
+              transition: 1s;
+              transform: perspective(2000px) rotateY(0deg);
+            }
+            .image img{
+              width: 100%;
+              border: 4px solid grey;
+              border-radius: 15px;
+          }
+            .content{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-image: url("d.jpg");
+              z-index: 1;
+              transform-origin: left;
+              transition: 1s;
+              transform: perspective(2000px) rotateY(0deg);
+              padding: 25px;
+              box-sizing: border-box;
+              text-align: justify;
+            }
+            .box:hover .image{
+              transform: perspective(2000px) rotateY(-90deg);
+            }
+            .box:hover .content{
+              transform: perspective(2000px) rotateY(0deg);
+            }
+            #table1{
+              font-family: cursive;
+              color: white;
+            }
+            #middle{
+              width: 95%;
+              position: relative;
+              bottom: 16px;
+              left: 35px;
+              background-image: url("h.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              font-family: verdana;
+              color:white;
+              border: 5px solid grey;
+              border-radius: 20px;
+            }
+#middle_text{
+  text-align: right;
+  font-size: 25px;
+}
+#head_mid{
+  color: white;
+  position: relative;
+  right: 400px;
+  font-size: 40px;
+  text-align: right;
+}
+#list{
+  position: relative;
+  bottom: 15px;
+  left: 450px;
+}
+.middle2{
+  width: 95%;
+  margin: auto;
+  position: relative;
+  top: 100px;
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 30px 30px 0px 0px;
+  background-image: url("g.jpg");
+  background-size: cover;
+}
+.middle2 p{
+  color: white;
+  font-size: 30px;
+}
+.middle2 table{
+  font-size: 30px;
+  margin: auto;
+  color: white;
+}
+.middle2 td{
+  padding-left: 40px;
+}
+#head_mid2{
+  text-align: center;
+  font-size: 45px;
+  font-family: verdana;
+  color: white;
+}
+.middle3{
+  width: 95%;
+  position: relative;
+  margin: auto;
+  top: 130px;
+  font-size: 30px;
+  color: white;
+  border: 5px solid grey;
+  border-radius: 20px;
+  background-image: url("o.jpg");
+}
+#head_mid3{
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  font-family: verdana;
+}
+.slider{
+  width: 800px;
+  height:400px;
+  background-image: url("i.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  border: 5px solid white;
+}
+@keyframes slide {
+  25%{
+    background: url("k.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50%{
+    background: url("l.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  75%{
+    background: url("m.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100%{
+    background: url("i.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.bn p{
+font-family: cursive;
+font-size: 80px;
+margin-top: 10px;
+margin-left: 40px;
+position: fixed;
+z-index: 3;
+color: white;
+}
+.bn p{
+  animation-name: bn;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes bn {
+12.5%{ transform: rotate(45deg); color: #00EEEE;}
+25%{ transform: rotate(90deg);color: #6495ED;}
+37.5%{ transform: rotate(135deg); color: #0000FF;}
+50%{ transform: rotate(180deg); color: #00008B;}
+62.5%{ transform: rotate(225deg); color: #0000FF;}
+75%{ transform: rotate(270deg); color: #6495ED;}
+87.5%{ transform: rotate(315deg); color: #00EEEE;}
+100%{ transform: rotate(360deg); color: white;}
+}
+#imp{
+  animation-name: imp;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes imp {
+  50% {color:#0000FF ;}
+  100% {color: white;}
+}
+  /*button styling*/
+  .button{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    font-family: verdana;
+    border: 2px solid #00FFFF;
+    font-size: 15px;
+    color: #00FFFF;
+    transition: .5s;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .button:hover {
+    color: white;
+  }
+  .button span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00FFFF;
+    opacity: 0.25;
+    transition: .5s;
+    z-index: -1;
+  }
+  .button span:nth-child(1)
+  {
+    top: -100%;
+    left: -100%;
+  }
+  .button:hover span:nth-child(1)
+  {
+    top: 0%;
+    left: 0%;
+  }
+  .button span:nth-child(2)
+  {
+    bottom: -100%;
+    left: -100%;
+  }
+  .button:hover span:nth-child(2)
+  {
+    bottom: 0;
+    left: 0;
+  }
+  .button span:nth-child(3)
+  {
+    top: -100%;
+    right: -100%;
+  }
+  .button:hover span:nth-child(3)
+  {
+    top: 0;
+    right:0;
+  }
+  .button span:nth-child(4)
+  {
+    bottom: -100%;
+    right: -100%;
+  }
+  .button:hover span:nth-child(4)
+  {
+    bottom: 0;
+    right: 0;
+  }
+  #b1{
+    position: relative;
+    bottom: 15px;
+    left: 50px;
+  }
+  #b2{
+    position: relative;
+    left: 190px;
+    bottom: 15px;
+  }
+  #b3{
+    position: relative;
+    left: 330px;
+    bottom: 15px;
+  }
+  #b4{
+    position: relative;
+    left: 470px;
+    bottom: 15px;
+  }
+  #b5{
+    position: relative;
+    left: 610px;
+    bottom: 15px;
+  }
+  .contact{
+    position: relative;
+    top: 400px;
+    left:100px;
+  }
+  .contact li{
+    margin-left: 50px;
+  }
+  #c1{
+    font-size: 50px;
+    color: white;
+    border: 2px solid white;
+    animation-name: c1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #c2{
+    font-size: 50px;
+    color: white;
+    border: 2px solid white;
+    animation-name: c2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #c3{
+    font-size: 50px;
+    color: white;
+    border: 2px solid white;
+    animation-name: c3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes c1 {
+  50%{  background: #3B5998;}
+  100% {background: transparent;}
+  }
+  @keyframes c2 {
+  50% { background: #d34836;}
+  100% {background: transparent;}
+  }
+  @keyframes c3 {
+    50%{  background: #cd486b;}
+    100% { background: transparent;}
+  }
+  #fb{
+    color: white;
+    position: relative;
+      left: 100px;
+  }
+  #google{
+      color: white;
+    position: relative;
+    bottom: 50px;
+    left: 500px;
+  }
+  #insta{
+      color: white;
+    position: relative;
+    bottom: 100px;
+      left: 800px;
+  }
+  .blog{
+    position: relative;
+    top: 200px;
+  }
+  .blog h1{
+  font-size: 40px;
+  text-align: center;
+  color: #6495ED;
+  font-family: sans-serif;
+  }
+  .blog p{
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="" id="main">
+      <div class="bn">
+        <p>BN</p>
+      </div>
+      <div class="" id="header">
+        <p class="inline" id="heading">BHARAT NISCHAL</p>
+        <h4>( A STUDENT OF B TECH CSE    GNDU AMRITSAR)</h4>
+        </div>
+        <ul id="list">
+    <li id="b1"><a href="#middle" class="button" ><span></span>
+    <span></span>
+    <span></span>
+    <span></span>FAMILY</a></li>
+    <li id="b2"><a href="#middle2" class="button" ><span></span>
+    <span></span>
+    <span></span>
+    <span></span>EDUCATION</a></li>
+    <li id="b3"><a href="#middle3" class="button"><span></span>
+    <span></span>
+    <span></span>
+    <span></span>LIKES</a></li>
+    <li id="b4"><a href="#middle4" class="button"><span></span>
+    <span></span>
+    <span></span>
+    <span></span>BLOG</a></li>
+    <li id="b5"><a href="#middle5" class="button"><span></span>
+    <span></span>
+    <span></span>
+    <span></span>CONTACT</a></li>
+  </ul>
+      <div class="personal">
+      <div class="box">
+      <div class="image">
+      <img src="c.jpg" alt="">
+      <p id="imp">Place the cursor to see personal info</p>
+      </div>
+      <div class="content">
+        <h3>PERSONAL INFO</h3>
+      <br><br><br>
+       <table id="table1">
+      <tr>
+        <td>NAME</td>
+        <td>BHARAT NISCHAL</td>
+      </tr>
+      <tr>
+        <td>DOB</td>
+        <td>8 APRIL 1999</td>
+      </tr>
+      <tr>
+        <td>FATHER NAME</td>
+        <td>MR RAJ KUMAR NISCHAL</td>
+      </tr>
+      <tr>
+        <td>MOTHER NAME</td>
+        <td>SONIA</td>
+      </tr>
+      <tr>
+        <td>ADDRESS</td>
+        <td>9 RAJA GARDEN EXTN JALANDHAR</td>
+      </tr>
+    </table>
+      </div>
+      </div>
+    </div>
+    <div class="right" id="middle">
+      <h2 id="head_mid">FAMILY </h2>
+      <p id="middle_text">Hello friends my name is BHARAT NISCHAL . I am 18 year old. <br>I am from JALANDHAR CITY.I had a joint family.
+      I had a father, <br>mother and a elder sister in my family . My chachu's family lives <br> with us.But now due to
+    joining GNDU i shifted to AMRITSAR to <br>my massi's house.There i enjoy the company of my cousins. </p>
+    <br>
+    </div>
+    <div class="middle2" id="middle2">
+      <p id="head_mid2"> EDUCATION BACKGROUND</p>
+      <p>I passed my junior classes from RABINDRA DAY BOARDING PUBLIC SCHOOL. Then i changed my school and went to SHIV JYOTI PUBLIC SCHOOL.
+      I do my 10th and 12th from there.Here I made some of the very good friends who will be always with me. <br>Here is my 10th and 12th result. </p>
+      <table id="table2">
+        <tr>
+          <td>10th</td>
+          <td>10CGPA</td>
+        </tr>
+        <tr >
+          <td>12th</td>
+          <td>94.2%</td>
+        </tr>
+      </table>
+      <br><br>
+      <p>Now I had opted for B TECH CSE in GNDU AMRITSAR and I hope that i will learn some of the cool stuff there.  </p>
+    </div>
+    <div class="middle3" id="middle3">
+      <h2 id="head_mid3">LIKES</h2>
+      <p>* I like to play games and make them too . Recently I had joined a workshop of making games here are some of
+      my snapshots.</p>
+      <div class="slider">
+
+      </div>
+      <p>Its just a small part of my game.I am working on it once it is complete I am going to put it on playstore .
+      Stay linked to my FB, or Instagram to get the update.</p>
+      <p>* I am die hard fan of YUVRAJ SINGH <br>*I love eating. <br>*I like to travel </p>
+    </div>
+    <div class="blog" id="middle4">
+    <h1>BLOG <br><br>MY FIRST EXPERIENCE IN THE FIELD OF COMPUTER SCIENCE</h1>
+    <p>I always wanted to design a game in my childhood. I was fond of playing games.
+    So I worked hard for JEE passed  both  MAINS  <br>and ADVANCED but unable to score upto that level to get CSE .
+  My family members advised me to join other stream  at <br> NIT but I can't sacrifice CSE so I joined GNDU.That is the turning point
+of my life as that was a very good decidion.Now here <br> I am enjoing a lot.I had learned to play games here which was my
+childhood dream.I also learned making websites here <br>.Now next thing I want to learn is ANDROID , i hope i am going to learned
+it soon.CSE is my passion,my life  and <br>everything.I wanted to get recruited in Google.Hope I will get that achievement soon.  </p>
+    </div>
+    </div>
+    <div class="contact" id="middle5">
+      <ul>
+        <li class="inline" id="c1">FACEBOOK </li>
+        <li class="inline" id="c2">GOOGLE+ </li>
+        <li class="inline" id="c3">INSTAGRAM </li>
+      </ul>
+      <p id="fb">Follow me on facebook <br>BHARAT NISCHAL,JALANDHAR </p>
+      <p id="google">Follow me on google+ <br>nischalbharat4819</p>
+      <p id="insta">Follow me on Instagram <br>bharatnischal</p>
+    </div>
+  </body>
+</html>
