@@ -20,13 +20,24 @@
         background-image: url("e.jpg");
         padding: 5px;
       }
-      #header p{
+      #header h1{
         position: relative;
-        left: 560px;
+        left: 470px;
         top: 20px;
-        font-size: 70px;
-        color:white;
+        font-size: 90px;
+        color: rgba(255,255,255,0.3);
+        background-image: url("ryba2.png");
+        background-repeat: repeat-x;
+        background-position: top;
+        -webkit-background-clip:text;
+        animation: animate 15s linear infinite;
         font-family: cursive;
+      }
+      @keyframes animate {
+        0%{background-position: left 0px top 80px;}
+        40%{background-position: left 800px top -30px;}
+        80%{background-position: left 1800px top -30px;}
+        100%{background-position: left 2400px top 80px;}
       }
       h4{
         color: white;
@@ -341,7 +352,7 @@ color: white;
   }
   .contact{
     position: relative;
-    top: 400px;
+    top: 200px;
     left:100px;
   }
   .contact li{
@@ -354,6 +365,10 @@ color: white;
     animation-name: c1;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+  }
+  a{
+    text-decoration: none;
+    color: white;
   }
   #c2{
     font-size: 50px;
@@ -383,31 +398,15 @@ color: white;
     50%{  background: #cd486b;}
     100% { background: transparent;}
   }
-  #fb{
-    color: white;
-    position: relative;
-      left: 100px;
-  }
-  #google{
-      color: white;
-    position: relative;
-    bottom: 50px;
-    left: 500px;
-  }
-  #insta{
-      color: white;
-    position: relative;
-    bottom: 100px;
-      left: 800px;
-  }
   .blog{
     position: relative;
     top: 200px;
+    background: #969696;
   }
   .blog h1{
   font-size: 40px;
   text-align: center;
-  color: #6495ED;
+  color: #0000FF;
   font-family: sans-serif;
   }
   .blog p{
@@ -415,6 +414,32 @@ color: white;
     text-align: justify;
     color: white;
   }
+section{
+  background-image: url(wave.png);
+  width: 100%;
+  height: 300px;
+  background-repeat: repeat-x;
+  position: relative;
+  top: 175px;
+}
+#video{
+  position: relative;
+  left: 400px;
+
+}
+.centre{
+  text-align: center;
+  font-family: cursive;
+}
+.download{
+  border: 2px solid white;
+  background-color: grey;
+}
+#play{
+  position: relative;
+  left: 35%;
+  color: blue;
+}
     </style>
   </head>
   <body>
@@ -423,7 +448,9 @@ color: white;
         <p>BN</p>
       </div>
       <div class="" id="header">
-        <p class="inline" id="heading">BHARAT NISCHAL</p>
+        <h1 class="inline" id="heading">
+          BHARAT NISCHAL
+</h1>
         <h4>( A STUDENT OF B TECH CSE    GNDU AMRITSAR)</h4>
         </div>
         <ul id="list">
@@ -513,11 +540,25 @@ color: white;
       <div class="slider">
 
       </div>
-      <p>Its just a small part of my game.I am working on it once it is complete I am going to put it on playstore .
+      <p>Its just a small part of my games.I am working on it once it is complete I am going to put it on playstore .
       Stay linked to my FB, or Instagram to get the update.</p>
+      <p class="centre">THIS IS MY COMPLETED GAME FOR PC</p>
+      <video id="video"src="momentum.webm" controls height="400px" width="500px" onkeydown="">
+
+      </video>
+      <br><br>
+        <h3 class="centre">YOU CAN DOWNLOAD FROM BELOW</h3>
+      &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp
+      <a class="download" target="_blank"href="https://drive.google.com/file/d/1UqIkq15xx6xUL7qm0neMX4QNfgss9PCE/view?usp=sharing">32 BITS</a>
+      &nbsp &nbsp &nbsp &nbsp<a class="download" target="_blank"href="https://drive.google.com/file/d/10DDibER5gzyC5KW2UJf5KTqI7-d_-APB/view?usp=sharing">64 BITS</a>
+        <br>  <a id="play" target="_blank"href="games.html">PLAY MOMENTUM ONLINE</a>
       <p>* I am die hard fan of YUVRAJ SINGH <br>*I love eating. <br>*I like to travel </p>
+
     </div>
+    <br><br><br><br>
+
     <div class="blog" id="middle4">
+
     <h1>BLOG <br><br>MY FIRST EXPERIENCE IN THE FIELD OF COMPUTER SCIENCE</h1>
     <p>I always wanted to design a game in my childhood. I was fond of playing games.
     So I worked hard for JEE passed  both  MAINS  <br>and ADVANCED but unable to score upto that level to get CSE .
@@ -526,16 +567,16 @@ of my life as that was a very good decidion.Now here <br> I am enjoing a lot.I h
 childhood dream.I also learned making websites here <br>.Now next thing I want to learn is ANDROID , i hope i am going to learned
 it soon.CSE is my passion,my life  and <br>everything.I wanted to get recruited in Google.Hope I will get that achievement soon.  </p>
     </div>
+    <section>
+
+    </section>
     </div>
     <div class="contact" id="middle5">
       <ul>
-        <li class="inline" id="c1">FACEBOOK </li>
-        <li class="inline" id="c2">GOOGLE+ </li>
-        <li class="inline" id="c3">INSTAGRAM </li>
+        <li class="inline" id="c1"><a  href="https://www.facebook.com/profile.php?id=100017445368356" target="_blank">FACEBOOK</a> </li>
+        <li class="inline" id="c2"> <a href="https://plus.google.com/100911427943846355163" target="_blank">GOOGLE+</a></li>
+        <li class="inline" id="c3"> <a href="https://www.instagram.com/bharatnischal/" target="_blank">INSTAGRAM</a></li>
       </ul>
-      <p id="fb">Follow me on facebook <br>BHARAT NISCHAL,JALANDHAR </p>
-      <p id="google">Follow me on google+ <br>nischalbharat4819</p>
-      <p id="insta">Follow me on Instagram <br>bharatnischal</p>
     </div>
   </body>
 </html>
