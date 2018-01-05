@@ -153,7 +153,7 @@
   background-color: white;
   border: 5px solid grey;
   border-radius: 30px 30px 0px 0px;
-  background-image: url("g.jpg");
+  background-image: url("o.jpg");
   background-size: cover;
 }
 .middle2 p{
@@ -181,9 +181,6 @@
   top: 130px;
   font-size: 30px;
   color: white;
-  border: 5px solid grey;
-  border-radius: 20px;
-  background-image: url("o.jpg");
 }
 #head_mid3{
   font-size: 60px;
@@ -414,7 +411,7 @@ color: white;
     text-align: justify;
     color: white;
   }
-section{
+#wave{
   background-image: url(wave.png);
   width: 100%;
   height: 300px;
@@ -424,7 +421,7 @@ section{
 }
 #video{
   position: relative;
-  left: 400px;
+  left: 5%;
 
 }
 .centre{
@@ -435,10 +432,51 @@ section{
   border: 2px solid white;
   background-color: grey;
 }
-#play{
+.play{
+  color: #FFC125;
+  font-size: 1.6vw;
+}
+video{
+  max-height: 25%;
+  max-width: 25%;
+}
+video:hover{
+max-height: 35%;
+max-width: 40%;
+transform: translateY(60px);
+}
+#big{
+  font-size: 5vw;
+  color: rgba(0, 0, 0,0.6);
+  font-family: arial;
+}
+.thanks{
+  font-size: 2vw;
   position: relative;
-  left: 35%;
-  color: blue;
+  top: 200px;
+  background-color: white;
+}
+h3{
+  color: #6495ED;
+}
+#more_games{
+  position: relative;
+  top: -100px;
+  left: 70px;
+  font-size: 2vw;
+  color: #DC143C;
+}
+.Game_name{
+  color: red;
+  font-family: cursive;
+}
+#middle3 table td{
+padding: 15px;
+margin-right: 20px;
+color: #7FFFD4;
+}
+.metre{
+  color: #DC143C;
 }
     </style>
   </head>
@@ -465,7 +503,7 @@ section{
     <li id="b3"><a href="#middle3" class="button"><span></span>
     <span></span>
     <span></span>
-    <span></span>LIKES</a></li>
+    <span></span>SKILLS</a></li>
     <li id="b4"><a href="#middle4" class="button"><span></span>
     <span></span>
     <span></span>
@@ -534,27 +572,82 @@ section{
       <p>Now I had opted for B TECH CSE in GNDU AMRITSAR and I hope that i will learn some of the cool stuff there.  </p>
     </div>
     <div class="middle3" id="middle3">
-      <h2 id="head_mid3">LIKES</h2>
-      <p>* I like to play games and make them too . Recently I had joined a workshop of making games here are some of
-      my snapshots.</p>
+      <h2 id="head_mid3">SKILLS</h2>
+      <h3>1. GAME DEVELOPMENT</h3>
+      <p class="metre">LEVEL: BEGINNER</p>
+      <table>
+        <tr>
+          <td>UNITY</td>
+          <td>15%</td>
+        </tr>
+      </table>
+      <img src="logo3.png" alt="" height="100px" width="17%">
+      <p>I am very fond of playing games , mostly android games . When i was small i had a great desire for making games.
+      This was the major reason for which i opted B Tech CSE.Here are some of the collection of games made by me.</p>
       <div class="slider">
 
       </div>
-      <p>Its just a small part of my games.I am working on it once it is complete I am going to put it on playstore .
+      <p>Its just a small part of my games.I am now working on modifying these games to run on anderoid .
       Stay linked to my FB, or Instagram to get the update.</p>
-      <p class="centre">THIS IS MY COMPLETED GAME FOR PC</p>
-      <video id="video"src="momentum.webm" controls height="400px" width="500px" onkeydown="">
+      <p class="centre">THESE ARE MY COMPLETED GAME FOR PC</p>
+      <video id="video"src="momentum.webm" controls  onkeydown="">
+
+      </video>&nbsp &nbsp
+      <video id="video"src="ball.webm" controls  onkeydown="">
 
       </video>
+      <span id="more_games">MORE GAMES COMING</span>
       <br><br>
         <h3 class="centre">YOU CAN DOWNLOAD FROM BELOW</h3>
-      &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp
+        <span class="Game_name">MOMENTUM</span>
+        &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<span class="Game_name">Rock-It Ball</span>
+        <br>
+      <br>
       <a class="download" target="_blank"href="https://drive.google.com/file/d/1UqIkq15xx6xUL7qm0neMX4QNfgss9PCE/view?usp=sharing">32 BITS</a>
       &nbsp &nbsp &nbsp &nbsp<a class="download" target="_blank"href="https://drive.google.com/file/d/10DDibER5gzyC5KW2UJf5KTqI7-d_-APB/view?usp=sharing">64 BITS</a>
-        <br>  <a id="play" target="_blank"href="games.html">PLAY MOMENTUM ONLINE</a>
-      <p>* I am die hard fan of YUVRAJ SINGH <br>*I love eating. <br>*I like to travel </p>
-
-    </div>
+      &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a target="_blank"class="download" href="https://drive.google.com/file/d/1twMcJzNBRJCTRnWkWQVRnCNInd5aZ72i/view?usp=sharing">Rock-it Ball</a>
+        <br>  <a class="play" target="_blank"href="games.html">PLAY MOMENTUM ONLINE</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a target="_blank" class="play" href="rock-itBall.html">PLAY ROCK-IT BALL ONLINE</a>
+        <br><br><br><br>
+        <h3>2. WEB DEVELOPMENT</h3>
+        <p class="metre">LEVEL : BEGINNER</p>
+        <table>
+          <tr>
+            <td>HTML AND CSS</td>
+            <td>75%</td>
+          </tr>
+          <tr>
+            <td>JAVASCRIPT</td>
+            <td>0%</td>
+            <tr>
+              <td>PYTHON(for backend)</td>
+              <td>0%</td>
+            </tr>
+          </tr>
+        </table>
+        <img src="logo1.png" alt="" height="100px" width="12%">
+        <img src="logo2.png" alt="" height="100px" width="12%">
+        <br><br><br><br>
+        <h3>3. PHTOSHOP</h3>
+        <img src="logo4.jpg" alt="" height="130px" width="12%">
+        <p class="metre"> LEVEL: JUST STARTED</p>
+        <table>
+          <tr>
+            <td>PHOTOSHOP</td>
+            <td>1%</td>
+          </tr>
+        </table>
+        <img src="bharat.jpg" alt="" width="35%">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <img src="bharat2.jpg" alt="" width="40%" height="370px">
+        <br><br>
+        <h3>4. PROGRAMMING LANGUAGES</h3>
+        <table>
+          <tr>
+            <td>C++</td>
+            <td>60%</td>
+          </tr>
+        </table>
+       </div>
     <br><br><br><br>
 
     <div class="blog" id="middle4">
@@ -567,7 +660,7 @@ of my life as that was a very good decidion.Now here <br> I am enjoing a lot.I h
 childhood dream.I also learned making websites here <br>.Now next thing I want to learn is ANDROID , i hope i am going to learned
 it soon.CSE is my passion,my life  and <br>everything.I wanted to get recruited in Google.Hope I will get that achievement soon.  </p>
     </div>
-    <section>
+    <section id="wave">
 
     </section>
     </div>
@@ -577,6 +670,11 @@ it soon.CSE is my passion,my life  and <br>everything.I wanted to get recruited 
         <li class="inline" id="c2"> <a href="https://plus.google.com/100911427943846355163" target="_blank">GOOGLE+</a></li>
         <li class="inline" id="c3"> <a href="https://www.instagram.com/bharatnischal/" target="_blank">INSTAGRAM</a></li>
       </ul>
+        <br><br><br>
     </div>
-  </body>
+    <div class="thanks">
+      <p id="big"class="centre">THANK YOU FOR VISITING</p>
+      <p class="centre">This website is under development</p>
+    </div>
+    </body>
 </html>
